@@ -1,7 +1,26 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import App from "next/app";
+import Wrapper from "../components/Wrapper";
+import { render } from "react-dom";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+class MyApp extends App {
+	static async getInitialProps({ Component, ctx }) {
+		return {
+			pageProps: {
+				...(Component.getInitialProps
+					? await Component.getInitialProps(ctx)
+					: {}),
+			},
+		};
+	}
+
+	render() {
+		const { Component, pageProps } = this.props;
+		return (
+			<Wrapper {...pageProps}>
+				<Component {...pageProps} />
+			</Wrapper>
+		);
+	}
 }
-
-export default MyApp
+export default MyApp;

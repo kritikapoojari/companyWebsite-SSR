@@ -1,0 +1,45 @@
+.re-container {
+	color: white;
+	height: 80vh;
+	background-color: black;
+	background-image: url("https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blte86401d468e74845/5e3137f08f7e217daef66f54/Landing_Page_Image_Motion.jpg?format=pjpg&width=540");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.container {
+	padding-top: 80px;
+	margin-left: 150px;
+	width: 50%;
+}
+.container-heading {
+	font-size: 60px;
+}
+.container-subheading {
+	width: 70%;
+	line-height: 28px;
+	font-size: 20px;
+}
+.title {
+	text-align: center;
+	color: #fc3838;
+}
+.content {
+	height: 60vh;
+	margin: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.contnt-sub,
+.main-content {
+	width: 48%;
+	height: 100%;
+}
+.contnt-sub img {
+	width: 100%;
+	height: 100%;
+}
+.main-heading {
+	font-size: 40px;
+}
